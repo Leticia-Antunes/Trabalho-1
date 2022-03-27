@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalho 1 </title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Criar pastas para o CSS e javaCript-->
 </head>
 <body>
-    
+    <div id="main-container"> <!-- Um container do formulario , vai ficar centralizado  -->
+        <h1>Cadastro do aluno</h1>
+        <form id="register-form">
+            <div class="full-box"><!-- Full-box é ocupar todo o formulario -->
+                <!-- Crinando o formulario de cadastro,criando os campos que ocupa todo o formulario e outras que ocupa metade do formulario -->
+                <label for="email">E-mal</label><!-- Label é o titudo do input,  -->
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail"> <!-- Name tem que ser igual ao for, placeholder - instruir o usuario -->
+
+                <!--
+                O primeira DIV do formulario foi criada, agora vamos criar os outros campos do formulario, mas com a metade do formulario 
+                -->
+                <div class="half-box">
+                    <label for="name">Nome</label> <!--O for é o nome da viavel, o que esta do lado de fora que vai aparecer na pagina -->
+                    <input type="name" name="name" id="name" placeholder="Digite seu nome">
+                </div>
+
+                <div class="half-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="lastname" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+                </div>
+
+                <div class="half-box">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                </div>
+
+                <div class="half-box">
+                    <label for="passconfirmation">Confirme sua senha</label>
+                    <input type="passconfirmation" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+                </div>
+              <!-- Criando a check box  -->
+              
+
+            </div>
+        </form> <!-- Formulario de validação, o que um id? -->
+    </div>
+    <script src="js/scripts.js"></script>
+    <!-- No fim do body para fazer manupulação de DOM ? - se tiver em cima do head pode não reconhecer algum elemento, para carregar todo o HTML e depois fazer as alteraçoes do software   -->
 </body>
 </html>
